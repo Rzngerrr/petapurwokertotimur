@@ -29,23 +29,48 @@
 </head>
 <body>
 
-<!-- Navbar -->
-<nav class="navbar navbar-expand-lg navbar-dark bg-primary shadow-sm fixed-top">
-  <div class="container">
-    <a class="navbar-brand fw-semibold" href="index.html">Peta Purwokerto</a>
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarNav">
-      <ul class="navbar-nav ms-auto">
-        <li class="nav-item"><a class="nav-link" href="index.html">Beranda</a></li>
-        <li class="nav-item"><a class="nav-link" href="peta-desa.html">Peta Purwokerto Wetan</a></li>
-        <li class="nav-item"><a class="nav-link" href="peta-kecamatan.html">Peta Purwokerto Timur</a></li>
-        <li class="nav-item"><a class="nav-link active" href="tentang.html">Tentang</a></li>
-      </ul>
+  <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top shadow-sm">
+    <div class="container-fluid">
+      <a class="navbar-brand fw-semibold" href="index.html">Peta Purwokerto</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+  
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+  
+          <li class="nav-item">
+            <a class="nav-link" href="index.html">Beranda</a>
+          </li>
+  
+          <!-- DROPDOWN DESA -->
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle active"
+               href="#"
+               data-bs-toggle="dropdown">
+              Peta Desa
+            </a>
+            <ul class="dropdown-menu shadow-sm">
+              <!-- AKTIFKAN SESUAI HALAMAN -->
+              <li><a class="dropdown-item" href="peta-desa.html">Purwokerto Wetan</a></li>
+              <li><a class="dropdown-item" href="peta-desa-lor.html">Purwokerto Lor</a></li>
+              <li><a class="dropdown-item" href="peta-desa-kranji.html">Desa Kranji</a></li>
+              <li><a class="dropdown-item" href="peta-desa-sokanegara.html">Desa Sokanegara</a></li>
+            </ul>
+          </li>
+  
+          <li class="nav-item">
+            <a class="nav-link" href="peta-kecamatan.html">Peta Purwokerto Timur</a>
+          </li>
+  
+          <li class="nav-item">
+            <a class="nav-link" href="tentang.html">Tentang</a>
+          </li>
+  
+        </ul>
+      </div>
     </div>
-  </div>
-</nav>
+  </nav>
 
 <!-- Header -->
 <section class="bg-light pt-5 mt-5 pb-4">

@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Web Peta Purwokerto</title>
+  <title>Web GIS Purwokerto Timur</title>
 
   <!-- Bootstrap CSS -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
@@ -29,69 +29,151 @@
     .hero {
       background: linear-gradient(135deg, #0d6efd, #0a58ca);
       color: white;
-      padding: 100px 0;
+      padding: 110px 0 90px;
     }
+
     .card:hover {
-      transform: translateY(-5px);
-      transition: 0.3s;
+      transform: translateY(-6px);
+      transition: 0.3s ease;
+    }
+
+    footer {
+      margin-top: auto;
     }
   </style>
 </head>
 <body>
 
-<!-- Navbar -->
-<nav class="navbar navbar-expand-lg navbar-dark bg-primary shadow-sm fixed-top">
-  <div class="container">
+<!-- NAVBAR -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top shadow-sm">
+  <div class="container-fluid">
     <a class="navbar-brand fw-semibold" href="index.html">Peta Purwokerto</a>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
       <span class="navbar-toggler-icon"></span>
     </button>
+
     <div class="collapse navbar-collapse" id="navbarNav">
       <ul class="navbar-nav ms-auto">
-        <li class="nav-item"><a class="nav-link active" href="index.html">Beranda</a></li>
-        <li class="nav-item"><a class="nav-link" href="peta-desa.html">Peta Purwokerto Wetan</a></li>
-        <li class="nav-item"><a class="nav-link" href="peta-kecamatan.html">Peta Purwokerto Timur</a></li>
-        <li class="nav-item"><a class="nav-link" href="tentang.html">Tentang</a></li>
+
+        <li class="nav-item">
+          <a class="nav-link active" href="index.html">Beranda</a>
+        </li>
+
+        <!-- DROPDOWN PETA DESA -->
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle"
+             href="#"
+             data-bs-toggle="dropdown">
+            Peta Desa
+          </a>
+          <ul class="dropdown-menu shadow-sm">
+            <li><a class="dropdown-item" href="peta-desa.html">Purwokerto Wetan</a></li>
+            <li><a class="dropdown-item" href="peta-desa-lor.html">Purwokerto Lor</a></li>
+            <li><a class="dropdown-item" href="peta-desa-kranji.html">Desa Kranji</a></li>
+            <li><a class="dropdown-item" href="peta-desa-sokanegara.html">Desa Sokanegara</a></li>
+          </ul>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link" href="peta-kecamatan.html">Peta Purwokerto Timur</a>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link" href="tentang.html">Tentang</a>
+        </li>
+
       </ul>
     </div>
   </div>
 </nav>
 
-<!-- Hero Section -->
+<main>
+
+<!-- HERO -->
 <section class="hero text-center">
   <div class="container">
-    <h1 class="display-5 fw-bold">Sistem Informasi Geografis Purwokerto</h1>
+    <h1 class="display-5 fw-bold">Kecamatan Purwokerto Timur</h1>
     <p class="lead mt-3">
-      Media visualisasi peta Desa Purwokerto Wetan dan Kecamatan Purwokerto Timur
-      berbasis Web GIS hasil pengolahan data QGIS.
+      Wilayah strategis di Kabupaten Banyumas yang memiliki peran penting
+      dalam sejarah, perkembangan kota, serta aktivitas sosial dan ekonomi masyarakat.
     </p>
-    <a href="peta-desa.html" class="btn btn-light btn-lg mt-4">Jelajahi Peta</a>
+    <a href="peta-kecamatan.html" class="btn btn-light btn-lg mt-4">
+      Jelajahi Peta Wilayah
+    </a>
   </div>
 </section>
 
-<!-- Content -->
+<!-- SEJARAH -->
+<section class="py-5 bg-light">
+  <div class="container">
+    <div class="row text-center mb-4">
+      <h3 class="fw-semibold">Sejarah Purwokerto Timur</h3>
+      <p class="text-muted">Perkembangan wilayah dari masa ke masa</p>
+    </div>
+
+    <div class="row justify-content-center">
+      <div class="col-lg-10">
+        <p>
+          Kecamatan Purwokerto Timur merupakan bagian dari wilayah Kabupaten Banyumas
+          yang berkembang seiring dengan pertumbuhan Kota Purwokerto sebagai pusat
+          pemerintahan dan aktivitas masyarakat. Sejak masa awal perkembangannya,
+          wilayah ini telah menjadi kawasan permukiman dan jalur penghubung antarwilayah.
+        </p>
+        <p>
+          Dengan bertambahnya jumlah penduduk dan kebutuhan fasilitas umum,
+          Purwokerto Timur terus mengalami pembangunan infrastruktur,
+          baik di bidang transportasi, pendidikan, maupun pelayanan publik,
+          sehingga menjadikannya salah satu kecamatan penting di wilayah Banyumas.
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- APA SAJA YANG ADA -->
 <section class="py-5">
   <div class="container">
     <div class="row text-center mb-4">
-      <h3 class="fw-semibold">Informasi Peta</h3>
-      <p class="text-muted">Peta administrasi yang disajikan secara informatif dan interaktif</p>
+      <h3 class="fw-semibold">Apa Saja yang Ada di Purwokerto Timur?</h3>
+      <p class="text-muted">Potensi wilayah dan fasilitas pendukung kehidupan masyarakat</p>
     </div>
+
     <div class="row">
-      <div class="col-md-6 mb-4">
+      <div class="col-md-4 mb-4">
         <div class="card h-100 shadow-sm">
           <div class="card-body">
-            <h5 class="card-title">Peta Desa Purwokerto Wetan</h5>
-            <p class="card-text">Menampilkan batas administrasi desa, jaringan jalan, dan fasilitas umum.</p>
-            <a href="peta-desa.html" class="btn btn-primary">Buka Peta</a>
+            <h5 class="card-title">Desa & Permukiman</h5>
+            <p class="card-text">
+              Wilayah ini terdiri dari beberapa desa dan kelurahan seperti
+              Purwokerto Wetan, Purwokerto Lor, Kranji, dan Sokanegara
+              dengan karakteristik permukiman yang beragam.
+            </p>
           </div>
         </div>
       </div>
-      <div class="col-md-6 mb-4">
+
+      <div class="col-md-4 mb-4">
         <div class="card h-100 shadow-sm">
           <div class="card-body">
-            <h5 class="card-title">Peta Kecamatan Purwokerto Timur</h5>
-            <p class="card-text">Visualisasi wilayah kecamatan dan informasi spasial pendukung.</p>
-            <a href="peta-kecamatan.html" class="btn btn-primary">Buka Peta</a>
+            <h5 class="card-title">Fasilitas Umum</h5>
+            <p class="card-text">
+              Tersedia fasilitas pendidikan, kesehatan, tempat ibadah,
+              area perdagangan, serta ruang terbuka yang menunjang
+              aktivitas masyarakat sehari-hari.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-4 mb-4">
+        <div class="card h-100 shadow-sm">
+          <div class="card-body">
+            <h5 class="card-title">Akses & Infrastruktur</h5>
+            <p class="card-text">
+              Didukung oleh jaringan jalan desa dan jalan utama yang
+              menghubungkan wilayah ini dengan pusat Kota Purwokerto
+              dan kecamatan di sekitarnya.
+            </p>
           </div>
         </div>
       </div>
@@ -99,9 +181,42 @@
   </div>
 </section>
 
-<!-- Footer -->
-<footer class="bg-dark text-white text-center py-3 mt-auto">
-      <p class="mb-0">© 2025 Web GIS Purwokerto | Dibuat untuk keperluan akademik</p>
+<!-- KEISTIMEWAAN -->
+<section class="py-5 bg-light">
+  <div class="container">
+    <div class="row text-center mb-4">
+      <h3 class="fw-semibold">Keistimewaan Purwokerto Timur</h3>
+      <p class="text-muted">Ciri khas dan nilai lebih wilayah</p>
+    </div>
+
+    <div class="row justify-content-center">
+      <div class="col-lg-10">
+        <ul class="list-group list-group-flush">
+          <li class="list-group-item">
+            📍 Lokasi strategis yang menjadi penghubung pusat kota dan wilayah sekitarnya.
+          </li>
+          <li class="list-group-item">
+            🏫 Ketersediaan fasilitas pendidikan dan pelayanan publik yang memadai.
+          </li>
+          <li class="list-group-item">
+            🌱 Perkembangan wilayah yang seimbang antara permukiman dan ruang terbuka.
+          </li>
+          <li class="list-group-item">
+            🗺️ Potensi besar dalam pengembangan perencanaan wilayah berbasis data spasial.
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<!-- FOOTER -->
+<footer class="bg-dark text-white text-center py-3">
+  <p class="mb-0">
+    © 2025 Web GIS Purwokerto Timur | Dibuat untuk keperluan akademik
+  </p>
 </footer>
 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
