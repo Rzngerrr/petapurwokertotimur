@@ -1,0 +1,1 @@
+var json_Rumah_15 = {"type":"FeatureCollection","name":"Rumah_15","crs":{"type":"name","properties":{"name":"urn:ogc:def:crs:OGC:1.3:CRS84"}},"features":[{"type":"Feature","properties":{"id":"1","Nama":"Angger Rizallul Fikri","NIM":"23SA21A085"},"geometry":{"type":"Point","coordinates":[109.255160059301772,-7.427065105179052]}}]}

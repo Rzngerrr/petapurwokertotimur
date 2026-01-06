@@ -1,0 +1,1 @@
+var json_Kuburan_14 = {"type":"FeatureCollection","name":"Kuburan_14","crs":{"type":"name","properties":{"name":"urn:ogc:def:crs:OGC:1.3:CRS84"}},"features":[{"type":"Feature","properties":{"id":"1","Nama":"Pemakaman KaliPutih"},"geometry":{"type":"Point","coordinates":[109.255048447505388,-7.425667410566648]}}]}
