@@ -1,0 +1,1 @@
+var json_Bank_10 = {"type":"FeatureCollection","name":"Bank_10","crs":{"type":"name","properties":{"name":"urn:ogc:def:crs:OGC:1.3:CRS84"}},"features":[{"type":"Feature","properties":{"id":"1","Nama":"Bank Mandiri KC Purwokerto"},"geometry":{"type":"Point","coordinates":[109.242185880416145,-7.427579529109243]}}]}
