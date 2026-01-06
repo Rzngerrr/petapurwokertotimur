@@ -1,0 +1,1 @@
+var json_Pemerintahan_15 = {"type":"FeatureCollection","name":"Pemerintahan_15","crs":{"type":"name","properties":{"name":"urn:ogc:def:crs:OGC:1.3:CRS84"}},"features":[{"type":"Feature","properties":{"id":"1","Nama":"Kantor Kelurahan Kranji"},"geometry":{"type":"Point","coordinates":[109.23916261542108,-7.423231370227151]}}]}

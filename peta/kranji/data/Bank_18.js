@@ -1,0 +1,1 @@
+var json_Bank_18 = {"type":"FeatureCollection","name":"Bank_18","crs":{"type":"name","properties":{"name":"urn:ogc:def:crs:OGC:1.3:CRS84"}},"features":[{"type":"Feature","properties":{"id":"1","Nama":"BCA KCU Purwokerto"},"geometry":{"type":"Point","coordinates":[109.234537112125025,-7.426040458251827]}}]}
